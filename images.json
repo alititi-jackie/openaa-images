@@ -1,0 +1,310 @@
+[
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "ad-5.png",
+    "path": "img/news/ad-5.png",
+    "url": "https://img.openaa.com/img/news/ad-5.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "ad-123.png",
+    "path": "img/news/ad-123.png",
+    "url": "https://img.openaa.com/img/news/ad-123.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "ChatGPT Image 2026年4月26日 12_48_44.png",
+    "path": "img/news/ChatGPT Image 2026年4月26日 12_48_44.png",
+    "url": "https://img.openaa.com/img/news/ChatGPT Image 2026年4月26日 12_48_44.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "ChatGPT Image 2026年4月26日 12_49_34.png",
+    "path": "img/news/ChatGPT Image 2026年4月26日 12_49_34.png",
+    "url": "https://img.openaa.com/img/news/ChatGPT Image 2026年4月26日 12_49_34.png"
+  },
+  {
+    "category": "share",
+    "categoryName": "分享海报",
+    "filename": "ad-1.png",
+    "path": "img/share/ad-1.png",
+    "url": "https://img.openaa.com/img/share/ad-1.png"
+  },
+  {
+    "category": "share",
+    "categoryName": "分享海报",
+    "filename": "ad-2.png",
+    "path": "img/share/ad-2.png",
+    "url": "https://img.openaa.com/img/share/ad-2.png"
+  },
+  {
+    "category": "banners",
+    "categoryName": "广告图片",
+    "filename": "ad-1.png",
+    "path": "img/banners/ad-1.png",
+    "url": "https://img.openaa.com/img/banners/ad-1.png"
+  },
+  {
+    "category": "banners",
+    "categoryName": "广告图片",
+    "filename": "ad-2.png",
+    "path": "img/banners/ad-2.png",
+    "url": "https://img.openaa.com/img/banners/ad-2.png"
+  },
+  {
+    "category": "banners",
+    "categoryName": "广告图片",
+    "filename": "ad-3.png",
+    "path": "img/banners/ad-3.png",
+    "url": "https://img.openaa.com/img/banners/ad-3.png"
+  },
+  {
+    "category": "default",
+    "categoryName": "默认图片",
+    "filename": "ChatGPT Image 2026年4月26日 12_49_34.png",
+    "path": "img/default/ChatGPT Image 2026年4月26日 12_49_34.png",
+    "url": "https://img.openaa.com/img/default/ChatGPT Image 2026年4月26日 12_49_34.png"
+  },
+  {
+    "category": "default",
+    "categoryName": "默认图片",
+    "filename": "ChatGPT Image 2026年4月26日 12_49_48.png",
+    "path": "img/default/ChatGPT Image 2026年4月26日 12_49_48.png",
+    "url": "https://img.openaa.com/img/default/ChatGPT Image 2026年4月26日 12_49_48.png"
+  },
+  {
+    "category": "default",
+    "categoryName": "默认图片",
+    "filename": "ChatGPT Image 2026年4月26日 12_49_52.png",
+    "path": "img/default/ChatGPT Image 2026年4月26日 12_49_52.png",
+    "url": "https://img.openaa.com/img/default/ChatGPT Image 2026年4月26日 12_49_52.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "0c0b0063-632b-43b4-92b6-6d760d2272ba.png",
+    "path": "img/logo/0c0b0063-632b-43b4-92b6-6d760d2272ba.png",
+    "url": "https://img.openaa.com/img/logo/0c0b0063-632b-43b4-92b6-6d760d2272ba.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "6fb4a471-6c63-4e33-9da3-fd67274e863c.png",
+    "path": "img/logo/6fb4a471-6c63-4e33-9da3-fd67274e863c.png",
+    "url": "https://img.openaa.com/img/logo/6fb4a471-6c63-4e33-9da3-fd67274e863c.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "7458f2e8-0823-47c1-9bef-1217d5c19e6b.png",
+    "path": "img/logo/7458f2e8-0823-47c1-9bef-1217d5c19e6b.png",
+    "url": "https://img.openaa.com/img/logo/7458f2e8-0823-47c1-9bef-1217d5c19e6b.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "69443c11-c202-48c4-b44c-9473e1df1437.png",
+    "path": "img/logo/69443c11-c202-48c4-b44c-9473e1df1437.png",
+    "url": "https://img.openaa.com/img/logo/69443c11-c202-48c4-b44c-9473e1df1437.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "79508272-2ec3-4cf9-8382-3ea071857711.png",
+    "path": "img/logo/79508272-2ec3-4cf9-8382-3ea071857711.png",
+    "url": "https://img.openaa.com/img/logo/79508272-2ec3-4cf9-8382-3ea071857711.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "ChatGPT Image 2025年12月18日 20_49_35.png",
+    "path": "img/logo/ChatGPT Image 2025年12月18日 20_49_35.png",
+    "url": "https://img.openaa.com/img/logo/ChatGPT Image 2025年12月18日 20_49_35.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "d7374b59-1295-4c53-91fe-390a56042db8.png",
+    "path": "img/logo/d7374b59-1295-4c53-91fe-390a56042db8.png",
+    "url": "https://img.openaa.com/img/logo/d7374b59-1295-4c53-91fe-390a56042db8.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "dfa23bbf-5ef3-4cf5-bae2-0fdde5d66b1a.png",
+    "path": "img/logo/dfa23bbf-5ef3-4cf5-bae2-0fdde5d66b1a.png",
+    "url": "https://img.openaa.com/img/logo/dfa23bbf-5ef3-4cf5-bae2-0fdde5d66b1a.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "logo.png",
+    "path": "img/logo/logo.png",
+    "url": "https://img.openaa.com/img/logo/logo.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "logo2.png",
+    "path": "img/logo/logo2.png",
+    "url": "https://img.openaa.com/img/logo/logo2.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "logo3.png",
+    "path": "img/logo/logo3.png",
+    "url": "https://img.openaa.com/img/logo/logo3.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "logo5.png",
+    "path": "img/logo/logo5.png",
+    "url": "https://img.openaa.com/img/logo/logo5.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "openAA (2).png",
+    "path": "img/logo/openAA (2).png",
+    "url": "https://img.openaa.com/img/logo/openAA (2).png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "openaa.png",
+    "path": "img/logo/openaa.png",
+    "url": "https://img.openaa.com/img/logo/openaa.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "unnamed.jpg",
+    "path": "img/logo/unnamed.jpg",
+    "url": "https://img.openaa.com/img/logo/unnamed.jpg"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "usa168hub-logo.png",
+    "path": "img/logo/usa168hub-logo.png",
+    "url": "https://img.openaa.com/img/logo/usa168hub-logo.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "微信图片_20250610063312.png",
+    "path": "img/logo/微信图片_20250610063312.png",
+    "url": "https://img.openaa.com/img/logo/微信图片_20250610063312.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "微信图片_20250610063333.png",
+    "path": "img/logo/微信图片_20250610063333.png",
+    "url": "https://img.openaa.com/img/logo/微信图片_20250610063333.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "微信图片_20251128085800_37_16.png",
+    "path": "img/logo/微信图片_20251128085800_37_16.png",
+    "url": "https://img.openaa.com/img/logo/微信图片_20251128085800_37_16.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "微信图片_20251128085801_38_16.jpg",
+    "path": "img/logo/微信图片_20251128085801_38_16.jpg",
+    "url": "https://img.openaa.com/img/logo/微信图片_20251128085801_38_16.jpg"
+  },
+  {
+    "category": "icons",
+    "categoryName": "图标",
+    "filename": "ad-3.png",
+    "path": "img/icons/ad-3.png",
+    "url": "https://img.openaa.com/img/icons/ad-3.png"
+  },
+  {
+    "category": "icons",
+    "categoryName": "图标",
+    "filename": "ad-4.png",
+    "path": "img/icons/ad-4.png",
+    "url": "https://img.openaa.com/img/icons/ad-4.png"
+  },
+  {
+    "category": "icons",
+    "categoryName": "图标",
+    "filename": "ad-5.png",
+    "path": "img/icons/ad-5.png",
+    "url": "https://img.openaa.com/img/icons/ad-5.png"
+  },
+  {
+    "category": "dmv",
+    "categoryName": "DMV 图片",
+    "filename": "ad-5.png",
+    "path": "img/dmv/ad-5.png",
+    "url": "https://img.openaa.com/img/dmv/ad-5.png"
+  },
+  {
+    "category": "dmv",
+    "categoryName": "DMV 图片",
+    "filename": "ad-123.png",
+    "path": "img/dmv/ad-123.png",
+    "url": "https://img.openaa.com/img/dmv/ad-123.png"
+  },
+  {
+    "category": "dmv",
+    "categoryName": "DMV 图片",
+    "filename": "ChatGPT Image 2026年4月26日 12_48_44.png",
+    "path": "img/dmv/ChatGPT Image 2026年4月26日 12_48_44.png",
+    "url": "https://img.openaa.com/img/dmv/ChatGPT Image 2026年4月26日 12_48_44.png"
+  },
+  {
+    "category": "services",
+    "categoryName": "本地服务图片",
+    "filename": "ad-1.png",
+    "path": "img/services/ad-1.png",
+    "url": "https://img.openaa.com/img/services/ad-1.png"
+  },
+  {
+    "category": "services",
+    "categoryName": "本地服务图片",
+    "filename": "ad-2.png",
+    "path": "img/services/ad-2.png",
+    "url": "https://img.openaa.com/img/services/ad-2.png"
+  },
+  {
+    "category": "pages",
+    "categoryName": "页面配图",
+    "filename": "ad-1.png",
+    "path": "img/pages/ad-1.png",
+    "url": "https://img.openaa.com/img/pages/ad-1.png"
+  },
+  {
+    "category": "pages",
+    "categoryName": "页面配图",
+    "filename": "ad-2.png",
+    "path": "img/pages/ad-2.png",
+    "url": "https://img.openaa.com/img/pages/ad-2.png"
+  },
+  {
+    "category": "others",
+    "categoryName": "其它图片",
+    "filename": "ad-1.png",
+    "path": "img/others/ad-1.png",
+    "url": "https://img.openaa.com/img/others/ad-1.png"
+  },
+  {
+    "category": "others",
+    "categoryName": "其它图片",
+    "filename": "ad-2.png",
+    "path": "img/others/ad-2.png",
+    "url": "https://img.openaa.com/img/others/ad-2.png"
+  }
+]
