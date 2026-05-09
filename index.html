@@ -243,8 +243,8 @@
       top: 0;
       background: #fff;
       border-bottom: 1px solid var(--border);
-      padding: 0 16px;
-      height: var(--header-h);
+      padding: 10px 16px;
+      min-height: var(--header-h);
       display: flex;
       align-items: center;
       gap: 10px;
@@ -273,19 +273,63 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
+    .detail-title-wrap {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .detail-position {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
 
     .detail-body {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px 16px 40px;
+      padding: 20px 16px 96px;
       max-width: 900px;
       margin: 0 auto;
       width: 100%;
     }
+    .detail-stage {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .detail-nav {
+      width: 48px;
+      height: 48px;
+      border-radius: 999px;
+      border: 1px solid rgba(37, 99, 235, .18);
+      background: rgba(255, 255, 255, .92);
+      color: var(--primary);
+      font-size: 30px;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: opacity .15s, transform .1s, background .15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .detail-nav:hover { background: var(--primary-light); }
+    .detail-nav:active { transform: scale(.96); }
+    .detail-nav.disabled,
+    .detail-nav:disabled {
+      opacity: .35;
+      cursor: default;
+      pointer-events: none;
+    }
     .detail-img-wrap {
       width: 100%;
+      flex: 1;
       background: #f8fafc;
       border-radius: var(--radius);
       border: 1px solid var(--border);
@@ -446,6 +490,7 @@
       body { padding-bottom: 0; }
       .back-top { bottom: 20px; }
       .toast { bottom: 24px; }
+      .detail-body { padding-bottom: 48px; }
       .site-footer {
         background: #fff;
         border-top: 1px solid var(--border);
@@ -464,6 +509,12 @@
     }
     @media (max-width: 767px) {
       .site-footer { display: none; }
+      .detail-stage { gap: 8px; }
+      .detail-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+      }
     }
 
     /* desktop category scroll buttons */
@@ -523,11 +574,18 @@
       </svg>
       返回
     </button>
-    <div class="detail-title" id="detailTitle"></div>
+    <div class="detail-title-wrap">
+      <div class="detail-title" id="detailTitle"></div>
+      <div class="detail-position" id="detailPosition"></div>
+    </div>
   </div>
   <div class="detail-body">
-    <div class="detail-img-wrap">
-      <img class="detail-img" id="detailImg" src="" alt="" />
+    <div class="detail-stage">
+      <button class="detail-nav detail-nav-prev" id="detailPrev" aria-label="上一张" type="button">‹</button>
+      <div class="detail-img-wrap" id="detailImgWrap">
+        <img class="detail-img" id="detailImg" src="" alt="" />
+      </div>
+      <button class="detail-nav detail-nav-next" id="detailNext" aria-label="下一张" type="button">›</button>
     </div>
     <p class="detail-filename" id="detailFilename"></p>
     <div class="detail-url-box" id="detailUrlBox"></div>
@@ -606,6 +664,11 @@
   let allImages = [];
   let currentCat = 'all';
   let savedScrollY = 0;
+  let currentDetailList = [];
+  let currentDetailIndex = -1;
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let touchActive = false;
 
   const CATEGORIES = [
     { key: 'all',      label: '全部' },
@@ -632,6 +695,10 @@
   const detail      = document.getElementById('detail');
   const detailBack  = document.getElementById('detailBack');
   const detailTitle = document.getElementById('detailTitle');
+  const detailPosition = document.getElementById('detailPosition');
+  const detailPrev = document.getElementById('detailPrev');
+  const detailNext = document.getElementById('detailNext');
+  const detailImgWrap = document.getElementById('detailImgWrap');
   const detailImg   = document.getElementById('detailImg');
   const detailFilename = document.getElementById('detailFilename');
   const detailUrlBox   = document.getElementById('detailUrlBox');
@@ -703,9 +770,13 @@
     }
   }
 
+  function getCurrentImages(cat = currentCat) {
+    return cat === 'all' ? allImages : allImages.filter(i => i.category === cat);
+  }
+
   // ── Render grid ──────────────────────────────────────────────────────
   function renderGrid(cat) {
-    const imgs = cat === 'all' ? allImages : allImages.filter(i => i.category === cat);
+    const imgs = getCurrentImages(cat);
     grid.innerHTML = '';
 
     if (imgs.length === 0) {
@@ -724,7 +795,7 @@
 
     gridCount.textContent = `共 ${imgs.length} 张图片`;
 
-    imgs.forEach(img => {
+    imgs.forEach((img, index) => {
       const card = document.createElement('div');
       card.className = 'card';
       card.setAttribute('role', 'button');
@@ -758,7 +829,7 @@
       card.appendChild(thumb);
       card.appendChild(label);
 
-      const open = () => openDetail(img);
+      const open = () => openDetail(imgs, index);
       card.addEventListener('click', open);
       card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
 
@@ -769,9 +840,13 @@
   function truncate(s, n) { return s.length <= n ? s : s.slice(0, n - 1) + '…'; }
 
   // ── Detail view ──────────────────────────────────────────────────────
-  function openDetail(img) {
-    savedScrollY = window.scrollY;
+  function renderDetailByIndex(index) {
+    const img = currentDetailList[index];
+    if (!img) return;
+
+    currentDetailIndex = index;
     detailTitle.textContent = img.categoryName + ' / ' + img.filename;
+    detailPosition.textContent = `第 ${index + 1} / ${currentDetailList.length} 张`;
     detailFilename.textContent = img.filename;
     detailUrlBox.textContent = img.url;
     detailImg.src = img.url;
@@ -779,8 +854,20 @@
     btnDownload.href = img.url;
     btnDownload.download = img.filename;
     btnOpen.href = img.url;
-    detail.classList.add('open');
+    const isFirst = index <= 0;
+    const isLast = index >= currentDetailList.length - 1;
+    detailPrev.disabled = isFirst;
+    detailPrev.classList.toggle('disabled', isFirst);
+    detailNext.disabled = isLast;
+    detailNext.classList.toggle('disabled', isLast);
     detail.scrollTop = 0;
+  }
+
+  function openDetail(list, index) {
+    savedScrollY = window.scrollY;
+    currentDetailList = list.slice();
+    renderDetailByIndex(index);
+    detail.classList.add('open');
     document.body.style.overflow = 'hidden';
     detailBack.focus();
   }
@@ -792,12 +879,69 @@
     window.scrollTo({ top: savedScrollY, behavior: 'instant' });
   }
 
+  function stepDetail(offset, edgeMessage) {
+    const nextIndex = currentDetailIndex + offset;
+    if (nextIndex < 0 || nextIndex >= currentDetailList.length) {
+      if (edgeMessage) showToast(edgeMessage);
+      return false;
+    }
+    renderDetailByIndex(nextIndex);
+    return true;
+  }
+
   detailBack.addEventListener('click', closeDetail);
+  detailPrev.addEventListener('click', () => stepDetail(-1, '已经是第一张'));
+  detailNext.addEventListener('click', () => stepDetail(1, '已经是最后一张'));
 
   // Close on Escape key
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && detail.classList.contains('open')) closeDetail();
+    if (!detail.classList.contains('open')) return;
+    if (e.key === 'Escape') {
+      closeDetail();
+      return;
+    }
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      stepDetail(-1, '已经是第一张');
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      stepDetail(1, '已经是最后一张');
+    }
   });
+
+  detailImgWrap.addEventListener('touchstart', e => {
+    if (!detail.classList.contains('open') || e.touches.length !== 1) return;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    touchActive = true;
+  }, { passive: true });
+
+  detailImgWrap.addEventListener('touchmove', e => {
+    if (!touchActive || e.touches.length !== 1) return;
+    const deltaX = e.touches[0].clientX - touchStartX;
+    const deltaY = e.touches[0].clientY - touchStartY;
+    if (Math.abs(deltaY) > Math.abs(deltaX)) {
+      touchActive = false;
+    }
+  }, { passive: true });
+
+  detailImgWrap.addEventListener('touchend', e => {
+    if (!touchActive || e.changedTouches.length !== 1) {
+      touchActive = false;
+      return;
+    }
+
+    const deltaX = e.changedTouches[0].clientX - touchStartX;
+    const deltaY = e.changedTouches[0].clientY - touchStartY;
+    touchActive = false;
+
+    if (Math.abs(deltaX) < 50 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+    if (deltaX < 0) {
+      stepDetail(1, '已经是最后一张');
+    } else {
+      stepDetail(-1, '已经是第一张');
+    }
+  }, { passive: true });
 
   // ── Copy link ────────────────────────────────────────────────────────
   btnCopy.addEventListener('click', () => {
