@@ -2,6 +2,13 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
+    "filename": "6e374654-6816-4da8-9736-bd374ea70b04.png",
+    "path": "img/news/6e374654-6816-4da8-9736-bd374ea70b04.png",
+    "url": "https://img.openaa.com/img/news/6e374654-6816-4da8-9736-bd374ea70b04.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
     "filename": "ad-5.png",
     "path": "img/news/ad-5.png",
     "url": "https://img.openaa.com/img/news/ad-5.png"
@@ -44,6 +51,13 @@
   {
     "category": "banners",
     "categoryName": "广告图片",
+    "filename": "6e374654-6816-4da8-9736-bd374ea70b04.png",
+    "path": "img/banners/6e374654-6816-4da8-9736-bd374ea70b04.png",
+    "url": "https://img.openaa.com/img/banners/6e374654-6816-4da8-9736-bd374ea70b04.png"
+  },
+  {
+    "category": "banners",
+    "categoryName": "广告图片",
     "filename": "ad-1.png",
     "path": "img/banners/ad-1.png",
     "url": "https://img.openaa.com/img/banners/ad-1.png"
@@ -61,6 +75,13 @@
     "filename": "ad-3.png",
     "path": "img/banners/ad-3.png",
     "url": "https://img.openaa.com/img/banners/ad-3.png"
+  },
+  {
+    "category": "default",
+    "categoryName": "默认图片",
+    "filename": "6e374654-6816-4da8-9736-bd374ea70b04.png",
+    "path": "img/default/6e374654-6816-4da8-9736-bd374ea70b04.png",
+    "url": "https://img.openaa.com/img/default/6e374654-6816-4da8-9736-bd374ea70b04.png"
   },
   {
     "category": "default",
@@ -292,6 +313,13 @@
     "filename": "ad-2.png",
     "path": "img/pages/ad-2.png",
     "url": "https://img.openaa.com/img/pages/ad-2.png"
+  },
+  {
+    "category": "others",
+    "categoryName": "其它图片",
+    "filename": "6e374654-6816-4da8-9736-bd374ea70b04.png",
+    "path": "img/others/6e374654-6816-4da8-9736-bd374ea70b04.png",
+    "url": "https://img.openaa.com/img/others/6e374654-6816-4da8-9736-bd374ea70b04.png"
   },
   {
     "category": "others",
