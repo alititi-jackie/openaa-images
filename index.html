@@ -123,11 +123,15 @@
       align-items: center;
     }
     .cat-scroll-btn:hover { color: var(--primary); }
+    .cat-all-fixed {
+      flex-shrink: 0;
+      margin-left: 4px;
+    }
     .cat-list {
       display: flex;
       gap: 6px;
       overflow-x: auto;
-      padding: 8px 8px;
+      padding: 8px 4px;
       flex: 1;
       scrollbar-width: none;
     }
@@ -482,6 +486,7 @@
 <!-- ── Category nav ────────────────────────────────────────────────── -->
 <nav class="cat-wrap" aria-label="图片分类">
   <button class="cat-scroll-btn" id="catLeft" aria-label="向左滚动">&#8249;</button>
+  <button class="cat-btn cat-all-fixed active" id="catAllBtn" data-cat="all" role="tab" aria-selected="true">全部</button>
   <div class="cat-list" id="catList" role="tablist"></div>
   <button class="cat-scroll-btn" id="catRight" aria-label="向右滚动">&#8250;</button>
 </nav>
@@ -617,6 +622,7 @@
   ];
 
   // ── Elements ─────────────────────────────────────────────────────────
+  const catAllBtn   = document.getElementById('catAllBtn');
   const catList     = document.getElementById('catList');
   const catLeft     = document.getElementById('catLeft');
   const catRight    = document.getElementById('catRight');
@@ -636,13 +642,16 @@
   const backTop        = document.getElementById('backTop');
 
   // ── Build category nav ───────────────────────────────────────────────
+  catAllBtn.addEventListener('click', () => selectCat('all', catAllBtn));
+
   CATEGORIES.forEach(({ key, label }) => {
+    if (key === 'all') return; // "全部" is a fixed static button, not in the scrollable list
     const btn = document.createElement('button');
-    btn.className = 'cat-btn' + (key === 'all' ? ' active' : '');
+    btn.className = 'cat-btn';
     btn.textContent = label;
     btn.dataset.cat = key;
     btn.setAttribute('role', 'tab');
-    btn.setAttribute('aria-selected', key === 'all' ? 'true' : 'false');
+    btn.setAttribute('aria-selected', 'false');
     btn.addEventListener('click', () => selectCat(key, btn));
     catList.appendChild(btn);
   });
@@ -677,6 +686,11 @@
   // ── Category selection ───────────────────────────────────────────────
   function selectCat(key, clickedBtn) {
     currentCat = key;
+    // update the fixed "全部" button
+    const allActive = key === 'all';
+    catAllBtn.classList.toggle('active', allActive);
+    catAllBtn.setAttribute('aria-selected', allActive ? 'true' : 'false');
+    // update scrollable category buttons
     catList.querySelectorAll('.cat-btn').forEach(b => {
       const active = b.dataset.cat === key;
       b.classList.toggle('active', active);
@@ -684,8 +698,8 @@
     });
     renderGrid(key);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    // scroll clicked button into view
-    if (clickedBtn) {
+    // scroll clicked button into view (only for buttons inside the scrollable list)
+    if (clickedBtn && clickedBtn !== catAllBtn) {
       clickedBtn.scrollIntoView({ inline: 'nearest', block: 'nearest', behavior: 'smooth' });
     }
   }
