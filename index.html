@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenAA 图片库 - 华人 OpenAA 图片资源</title>
+  <meta name="description" content="OpenAA 图片库用于集中查看新闻图片、分享海报、广告图片、Logo、图标、DMV 图片和页面配图，方便复制图片地址和下载图片使用。" />
+  <link rel="canonical" href="https://img.openaa.com/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OpenAA 图片库 - 华人 OpenAA 图片资源" />
+  <meta property="og:description" content="OpenAA 图片库用于查看、复制和下载 OpenAA 静态图片资源。" />
+  <meta property="og:image" content="https://img.openaa.com/logo.png" />
+  <meta property="og:url" content="https://img.openaa.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Icons & Manifest -->
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <style>
+    /* ── Reset & base ─────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei",
+                   sans-serif;
+      background: #f4f6f8;
+      color: #1a1a2e;
+      min-height: 100vh;
+      padding-bottom: 80px; /* room for bottom nav */
+    }
+
+    /* ── CSS variables ────────────────────────────────────────────── */
+    :root {
+      --primary: #2563eb;
+      --primary-light: #eff6ff;
+      --text: #1a1a2e;
+      --text-muted: #6b7280;
+      --border: #e5e7eb;
+      --bg: #f4f6f8;
+      --card-bg: #ffffff;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --shadow: 0 1px 4px rgba(0,0,0,.08);
+      --shadow-md: 0 4px 16px rgba(0,0,0,.12);
+      --header-h: 56px;
+      --nav-h: 52px;
+    }
+
+    /* ── Header ───────────────────────────────────────────────────── */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      height: var(--header-h);
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      gap: 10px;
+    }
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text);
+      flex: 1;
+      min-width: 0;
+    }
+    .header-logo img {
+      height: 32px;
+      width: auto;
+      flex-shrink: 0;
+    }
+    .header-logo span {
+      font-size: 15px;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .header-back {
+      flex-shrink: 0;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--primary);
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 1px solid var(--primary);
+      border-radius: 20px;
+      white-space: nowrap;
+      transition: background .15s;
+    }
+    .header-back:hover { background: var(--primary-light); }
+
+    /* ── Category nav ─────────────────────────────────────────────── */
+    .cat-wrap {
+      position: sticky;
+      top: var(--header-h);
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 4px;
+    }
+    .cat-scroll-btn {
+      flex-shrink: 0;
+      background: none;
+      border: none;
+      padding: 0 8px;
+      height: var(--nav-h);
+      font-size: 18px;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: none; /* shown via JS on desktop */
+      align-items: center;
+    }
+    .cat-scroll-btn:hover { color: var(--primary); }
+    .cat-list {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding: 8px 8px;
+      flex: 1;
+      scrollbar-width: none;
+    }
+    .cat-list::-webkit-scrollbar { display: none; }
+    .cat-btn {
+      flex-shrink: 0;
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: #fff;
+      font-size: 13px;
+      color: var(--text-muted);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all .15s;
+      font-weight: 500;
+    }
+    .cat-btn:hover { border-color: var(--primary); color: var(--primary); }
+    .cat-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    /* ── Image grid ───────────────────────────────────────────────── */
+    .grid-section {
+      padding: 16px 12px;
+    }
+    .grid-count {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    @media (min-width: 640px) {
+      .grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (min-width: 960px) {
+      .grid { grid-template-columns: repeat(4, 1fr); }
+    }
+    @media (min-width: 1280px) {
+      .grid { grid-template-columns: repeat(5, 1fr); }
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .card-thumb {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+      background: #f1f5f9;
+    }
+    .card-thumb.error-state {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .card-label {
+      padding: 6px 8px;
+      font-size: 11px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── Empty / error state ──────────────────────────────────────── */
+    .empty {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+    }
+    .empty svg { width: 56px; height: 56px; margin: 0 auto 16px; display: block; opacity: .4; }
+    .empty p { font-size: 15px; }
+
+    /* ── Detail view ──────────────────────────────────────────────── */
+    .detail {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 300;
+      background: #fff;
+      overflow-y: auto;
+      flex-direction: column;
+    }
+    .detail.open { display: flex; }
+
+    .detail-header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 0 16px;
+      height: var(--header-h);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 10;
+      flex-shrink: 0;
+    }
+    .detail-back {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: none;
+      border: none;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--primary);
+      cursor: pointer;
+      padding: 6px 0;
+    }
+    .detail-back svg { width: 18px; height: 18px; }
+    .detail-title {
+      flex: 1;
+      min-width: 0;
+      font-size: 14px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .detail-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 16px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .detail-img-wrap {
+      width: 100%;
+      background: #f8fafc;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 200px;
+    }
+    .detail-img {
+      max-width: 100%;
+      max-height: 65vh;
+      object-fit: contain;
+      display: block;
+    }
+    .detail-filename {
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--text-muted);
+      word-break: break-all;
+      text-align: center;
+    }
+    .detail-url-box {
+      margin-top: 12px;
+      width: 100%;
+      background: #f1f5f9;
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+      word-break: break-all;
+      border: 1px solid var(--border);
+    }
+
+    .detail-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .btn {
+      flex: 1;
+      min-width: 120px;
+      padding: 13px 16px;
+      border-radius: var(--radius-sm);
+      border: none;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: opacity .15s, transform .1s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn:active { transform: scale(.97); }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover { opacity: .9; }
+    .btn-secondary {
+      background: var(--primary-light);
+      color: var(--primary);
+      border: 1px solid #bfdbfe;
+    }
+    .btn-secondary:hover { background: #dbeafe; }
+    .btn-outline {
+      background: #fff;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-outline:hover { background: var(--bg); }
+
+    /* copy toast */
+    .toast {
+      position: fixed;
+      bottom: 90px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #1e293b;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 24px;
+      font-size: 14px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s, transform .25s;
+      z-index: 999;
+      white-space: nowrap;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* ── Back to top ──────────────────────────────────────────────── */
+    .back-top {
+      position: fixed;
+      right: 16px;
+      bottom: 76px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s;
+      z-index: 150;
+    }
+    .back-top.visible { opacity: 1; pointer-events: auto; }
+    .back-top svg { width: 22px; height: 22px; }
+
+    /* ── Bottom nav ───────────────────────────────────────────────── */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: #fff;
+      border-top: 1px solid var(--border);
+      display: flex;
+      z-index: 200;
+    }
+    .nav-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 10px;
+      font-weight: 500;
+      padding: 4px 0;
+      transition: color .15s;
+    }
+    .nav-item svg { width: 22px; height: 22px; }
+    .nav-item.active { color: var(--primary); }
+    .nav-item:not(.active):hover { color: #374151; }
+
+    /* desktop: hide bottom nav, show footer instead */
+    @media (min-width: 768px) {
+      .bottom-nav { display: none; }
+      body { padding-bottom: 0; }
+      .back-top { bottom: 20px; }
+      .toast { bottom: 24px; }
+      .site-footer {
+        background: #fff;
+        border-top: 1px solid var(--border);
+        padding: 24px 20px;
+        text-align: center;
+        font-size: 13px;
+        color: var(--text-muted);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+      .site-footer a { color: var(--primary); text-decoration: none; }
+      .site-footer a:hover { text-decoration: underline; }
+    }
+    @media (max-width: 767px) {
+      .site-footer { display: none; }
+    }
+
+    /* desktop category scroll buttons */
+    @media (min-width: 768px) {
+      .cat-scroll-btn { display: flex; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────────────── -->
+<header class="header">
+  <a class="header-logo" href="https://openaa.com/">
+    <img src="logo.png" alt="OpenAA Logo" onerror="this.style.display='none'" />
+    <span>OpenAA 图片库</span>
+  </a>
+  <a class="header-back" href="https://app.openaa.com/">返回 OpenAA</a>
+</header>
+
+<!-- ── Category nav ────────────────────────────────────────────────── -->
+<nav class="cat-wrap" aria-label="图片分类">
+  <button class="cat-scroll-btn" id="catLeft" aria-label="向左滚动">&#8249;</button>
+  <div class="cat-list" id="catList" role="tablist"></div>
+  <button class="cat-scroll-btn" id="catRight" aria-label="向右滚动">&#8250;</button>
+</nav>
+
+<!-- ── Image grid ───────────────────────────────────────────────────── -->
+<main class="grid-section" id="gridSection">
+  <div class="empty" id="loadingState">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+    </svg>
+    <p>正在加载图片列表…</p>
+  </div>
+  <p class="grid-count" id="gridCount" style="display:none"></p>
+  <div class="grid" id="grid"></div>
+</main>
+
+<!-- ── Desktop footer ───────────────────────────────────────────────── -->
+<footer class="site-footer" id="siteFooter">
+  <a href="https://openaa.com/">首页</a>
+  <a href="https://app.openaa.com/news">新闻</a>
+  <a href="https://app.openaa.com/navigation">导航</a>
+  <strong style="color:var(--primary)">图片库</strong>
+  <a href="https://app.openaa.com/profile">我的</a>
+  <span style="color:var(--border)">|</span>
+  <span>© 2025 OpenAA</span>
+</footer>
+
+<!-- ── Detail overlay ───────────────────────────────────────────────── -->
+<div class="detail" id="detail" role="dialog" aria-modal="true" aria-label="大图查看">
+  <div class="detail-header">
+    <button class="detail-back" id="detailBack" aria-label="返回">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+      返回
+    </button>
+    <div class="detail-title" id="detailTitle"></div>
+  </div>
+  <div class="detail-body">
+    <div class="detail-img-wrap">
+      <img class="detail-img" id="detailImg" src="" alt="" />
+    </div>
+    <p class="detail-filename" id="detailFilename"></p>
+    <div class="detail-url-box" id="detailUrlBox"></div>
+    <div class="detail-actions">
+      <button class="btn btn-primary" id="btnCopy">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
+        </svg>
+        复制链接
+      </button>
+      <a class="btn btn-secondary" id="btnDownload" href="#" download>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        下载图片
+      </a>
+      <a class="btn btn-outline" id="btnOpen" href="#" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+        打开原图
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ── Toast ────────────────────────────────────────────────────────── -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ── Back to top ──────────────────────────────────────────────────── -->
+<button class="back-top" id="backTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<!-- ── Bottom nav ────────────────────────────────────────────────────── -->
+<nav class="bottom-nav" aria-label="底部导航">
+  <a class="nav-item" href="https://openaa.com/">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+    </svg>
+    首页
+  </a>
+  <a class="nav-item" href="https://app.openaa.com/news">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l6 6v10a2 2 0 01-2 2z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/>
+    </svg>
+    新闻
+  </a>
+  <a class="nav-item" href="https://app.openaa.com/navigation">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+    </svg>
+    导航
+  </a>
+  <a class="nav-item active" href="https://img.openaa.com/" aria-current="page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+    </svg>
+    图片库
+  </a>
+  <a class="nav-item" href="https://app.openaa.com/profile">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
+    </svg>
+    我的
+  </a>
+</nav>
+
+<script>
+(function () {
+  'use strict';
+
+  // ── State ───────────────────────────────────────────────────────────
+  let allImages = [];
+  let currentCat = 'all';
+  let savedScrollY = 0;
+
+  const CATEGORIES = [
+    { key: 'all',      label: '全部' },
+    { key: 'news',     label: '新闻图片' },
+    { key: 'share',    label: '分享海报' },
+    { key: 'banners',  label: '广告图片' },
+    { key: 'default',  label: '默认图片' },
+    { key: 'logo',     label: 'Logo' },
+    { key: 'icons',    label: '图标' },
+    { key: 'dmv',      label: 'DMV 图片' },
+    { key: 'services', label: '本地服务图片' },
+    { key: 'pages',    label: '页面配图' },
+    { key: 'others',   label: '其它图片' },
+  ];
+
+  // ── Elements ─────────────────────────────────────────────────────────
+  const catList     = document.getElementById('catList');
+  const catLeft     = document.getElementById('catLeft');
+  const catRight    = document.getElementById('catRight');
+  const grid        = document.getElementById('grid');
+  const gridCount   = document.getElementById('gridCount');
+  const loadingState = document.getElementById('loadingState');
+  const detail      = document.getElementById('detail');
+  const detailBack  = document.getElementById('detailBack');
+  const detailTitle = document.getElementById('detailTitle');
+  const detailImg   = document.getElementById('detailImg');
+  const detailFilename = document.getElementById('detailFilename');
+  const detailUrlBox   = document.getElementById('detailUrlBox');
+  const btnCopy        = document.getElementById('btnCopy');
+  const btnDownload    = document.getElementById('btnDownload');
+  const btnOpen        = document.getElementById('btnOpen');
+  const toast          = document.getElementById('toast');
+  const backTop        = document.getElementById('backTop');
+
+  // ── Build category nav ───────────────────────────────────────────────
+  CATEGORIES.forEach(({ key, label }) => {
+    const btn = document.createElement('button');
+    btn.className = 'cat-btn' + (key === 'all' ? ' active' : '');
+    btn.textContent = label;
+    btn.dataset.cat = key;
+    btn.setAttribute('role', 'tab');
+    btn.setAttribute('aria-selected', key === 'all' ? 'true' : 'false');
+    btn.addEventListener('click', () => selectCat(key, btn));
+    catList.appendChild(btn);
+  });
+
+  // desktop scroll buttons
+  catLeft.addEventListener('click', () => { catList.scrollBy({ left: -160, behavior: 'smooth' }); });
+  catRight.addEventListener('click', () => { catList.scrollBy({ left: 160, behavior: 'smooth' }); });
+
+  // ── Load images.json ─────────────────────────────────────────────────
+  fetch('images.json')
+    .then(r => {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(data => {
+      allImages = Array.isArray(data) ? data : [];
+      loadingState.style.display = 'none';
+      gridCount.style.display = '';
+      renderGrid('all');
+    })
+    .catch(err => {
+      loadingState.innerHTML = `
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="15" y1="9" x2="9" y2="15"/>
+          <line x1="9" y1="9" x2="15" y2="15"/>
+        </svg>
+        <p>图片列表加载失败，请刷新重试</p>`;
+      console.error('Failed to load images.json:', err);
+    });
+
+  // ── Category selection ───────────────────────────────────────────────
+  function selectCat(key, clickedBtn) {
+    currentCat = key;
+    catList.querySelectorAll('.cat-btn').forEach(b => {
+      const active = b.dataset.cat === key;
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+    renderGrid(key);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // scroll clicked button into view
+    if (clickedBtn) {
+      clickedBtn.scrollIntoView({ inline: 'nearest', block: 'nearest', behavior: 'smooth' });
+    }
+  }
+
+  // ── Render grid ──────────────────────────────────────────────────────
+  function renderGrid(cat) {
+    const imgs = cat === 'all' ? allImages : allImages.filter(i => i.category === cat);
+    grid.innerHTML = '';
+
+    if (imgs.length === 0) {
+      grid.innerHTML = `
+        <div class="empty" style="grid-column:1/-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+          <p>暂无图片</p>
+        </div>`;
+      gridCount.textContent = '';
+      return;
+    }
+
+    gridCount.textContent = `共 ${imgs.length} 张图片`;
+
+    imgs.forEach(img => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.setAttribute('role', 'button');
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('aria-label', img.filename);
+
+      const thumb = document.createElement('img');
+      thumb.className = 'card-thumb';
+      thumb.src = img.url;
+      thumb.alt = img.filename;
+      thumb.loading = 'lazy';
+      thumb.decoding = 'async';
+      thumb.addEventListener('error', () => {
+        thumb.style.display = 'none';
+        const placeholder = document.createElement('div');
+        placeholder.className = 'card-thumb error-state';
+        placeholder.style.height = '0';
+        placeholder.style.paddingBottom = '75%';
+        placeholder.style.position = 'relative';
+        const span = document.createElement('span');
+        span.style.cssText = 'position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:12px;color:#9ca3af';
+        span.textContent = '图片加载失败';
+        placeholder.appendChild(span);
+        card.insertBefore(placeholder, label);
+      });
+
+      const label = document.createElement('div');
+      label.className = 'card-label';
+      label.textContent = truncate(img.filename, 28);
+
+      card.appendChild(thumb);
+      card.appendChild(label);
+
+      const open = () => openDetail(img);
+      card.addEventListener('click', open);
+      card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+
+      grid.appendChild(card);
+    });
+  }
+
+  function truncate(s, n) { return s.length <= n ? s : s.slice(0, n - 1) + '…'; }
+
+  // ── Detail view ──────────────────────────────────────────────────────
+  function openDetail(img) {
+    savedScrollY = window.scrollY;
+    detailTitle.textContent = img.categoryName + ' / ' + img.filename;
+    detailFilename.textContent = img.filename;
+    detailUrlBox.textContent = img.url;
+    detailImg.src = img.url;
+    detailImg.alt = img.filename;
+    btnDownload.href = img.url;
+    btnDownload.download = img.filename;
+    btnOpen.href = img.url;
+    detail.classList.add('open');
+    detail.scrollTop = 0;
+    document.body.style.overflow = 'hidden';
+    detailBack.focus();
+  }
+
+  function closeDetail() {
+    detail.classList.remove('open');
+    document.body.style.overflow = '';
+    // restore scroll position
+    window.scrollTo({ top: savedScrollY, behavior: 'instant' });
+  }
+
+  detailBack.addEventListener('click', closeDetail);
+
+  // Close on Escape key
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && detail.classList.contains('open')) closeDetail();
+  });
+
+  // ── Copy link ────────────────────────────────────────────────────────
+  btnCopy.addEventListener('click', () => {
+    const url = detailUrlBox.textContent.trim();
+    if (!url) return;
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url)
+        .then(() => showToast('已复制图片链接 ✓'))
+        .catch(() => fallbackCopy(url));
+    } else {
+      fallbackCopy(url);
+    }
+  });
+
+  function fallbackCopy(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    try {
+      const ok = document.execCommand('copy');
+      showToast(ok ? '已复制图片链接 ✓' : '请手动复制链接');
+    } catch {
+      showToast('请手动复制链接');
+    }
+    document.body.removeChild(ta);
+  }
+
+  // ── Toast ─────────────────────────────────────────────────────────────
+  let toastTimer;
+  function showToast(msg) {
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove('show'), 2500);
+  }
+
+  // ── Back to top ───────────────────────────────────────────────────────
+  window.addEventListener('scroll', () => {
+    backTop.classList.toggle('visible', window.scrollY > 300);
+  }, { passive: true });
+
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+})();
+</script>
+</body>
+</html>
