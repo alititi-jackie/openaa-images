@@ -644,8 +644,7 @@
   // ── Build category nav ───────────────────────────────────────────────
   catAllBtn.addEventListener('click', () => selectCat('all', catAllBtn));
 
-  CATEGORIES.forEach(({ key, label }) => {
-    if (key === 'all') return; // "全部" is a fixed static button, not in the scrollable list
+  CATEGORIES.filter(({ key }) => key !== 'all').forEach(({ key, label }) => {
     const btn = document.createElement('button');
     btn.className = 'cat-btn';
     btn.textContent = label;
