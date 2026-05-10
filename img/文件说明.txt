@@ -1,0 +1,32 @@
+1. 上传图片到对应文件夹：
+
+img/news/       新闻图片
+img/share/      分享海报
+img/banners/    广告图片
+img/default/    默认图片
+img/logo/       Logo
+img/icons/      图标
+img/dmv/        DMV 图片
+img/services/   本地服务图片
+img/pages/      页面配图
+img/others/     其它图片
+
+1. categoryName 映射：
+news     → 新闻图片
+share    → 分享海报
+banners  → 广告图片
+default  → 默认图片
+logo     → Logo
+icons    → 图标
+dmv      → DMV 图片
+services → 本地服务图片
+pages    → 页面配图
+others   → 其它图片
+
+2. 只收集图片文件：
+   - .jpg
+   - .jpeg
+   - .png
+   - .webp
+   - .gif
+   - .svg
