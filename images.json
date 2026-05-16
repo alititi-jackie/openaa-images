@@ -406,6 +406,13 @@
     "url": "https://img.openaa.com/img/icons/ad-5.png"
   },
   {
+    "category": "dmv",
+    "categoryName": "DMV 图片",
+    "filename": "e9a37db0-edbd-4480-aad3-a9427e4f2b22.png",
+    "path": "img/dmv/e9a37db0-edbd-4480-aad3-a9427e4f2b22.png",
+    "url": "https://img.openaa.com/img/dmv/e9a37db0-edbd-4480-aad3-a9427e4f2b22.png"
+  },
+  {
     "category": "services",
     "categoryName": "本地服务图片",
     "filename": "ad-1.png",
