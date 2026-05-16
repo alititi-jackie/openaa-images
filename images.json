@@ -408,6 +408,13 @@
   {
     "category": "dmv",
     "categoryName": "DMV 图片",
+    "filename": "ad-5.png",
+    "path": "img/dmv/ad-5.png",
+    "url": "https://img.openaa.com/img/dmv/ad-5.png"
+  },
+  {
+    "category": "dmv",
+    "categoryName": "DMV 图片",
     "filename": "cc6edfa4-6039-41d6-a53c-f642c64cc14a.png",
     "path": "img/dmv/cc6edfa4-6039-41d6-a53c-f642c64cc14a.png",
     "url": "https://img.openaa.com/img/dmv/cc6edfa4-6039-41d6-a53c-f642c64cc14a.png"
