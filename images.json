@@ -443,6 +443,20 @@
   {
     "category": "dmv",
     "categoryName": "DMV 图片",
+    "filename": "uscis-annual-asylum-fee-payment-guide.png",
+    "path": "img/dmv/uscis-annual-asylum-fee-payment-guide.png",
+    "url": "https://img.openaa.com/img/dmv/uscis-annual-asylum-fee-payment-guide.png"
+  },
+  {
+    "category": "dmv",
+    "categoryName": "DMV 图片",
+    "filename": "uscis-fee-rule-may-2026.png",
+    "path": "img/dmv/uscis-fee-rule-may-2026.png",
+    "url": "https://img.openaa.com/img/dmv/uscis-fee-rule-may-2026.png"
+  },
+  {
+    "category": "dmv",
+    "categoryName": "DMV 图片",
     "filename": "what-is-learner-permit-ny.png",
     "path": "img/dmv/what-is-learner-permit-ny.png",
     "url": "https://img.openaa.com/img/dmv/what-is-learner-permit-ny.png"
