@@ -408,6 +408,13 @@
   {
     "category": "dmv",
     "categoryName": "DMV 图片",
+    "filename": "7.png",
+    "path": "img/dmv/7.png",
+    "url": "https://img.openaa.com/img/dmv/7.png"
+  },
+  {
+    "category": "dmv",
+    "categoryName": "DMV 图片",
     "filename": "new-driver-after-buying-car-ny.png",
     "path": "img/dmv/new-driver-after-buying-car-ny.png",
     "url": "https://img.openaa.com/img/dmv/new-driver-after-buying-car-ny.png"
