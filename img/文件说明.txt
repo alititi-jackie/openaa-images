@@ -11,6 +11,16 @@ img/services/   本地服务图片
 img/pages/      页面配图
 img/others/     其它图片
 
+文件命名建议
+以后统一：
+openaa-home-banner-01.webp
+openaa-dmv-banner-01.webp
+openaa-news-banner-01.webp
+openaa-services-banner-01.webp
+
+建议以后 OpenAA 的：首页 Banner/广告轮播/新闻封面/DMV/海报/分享海报/导航页广告/本地服务广告
+基本都优先用：.webp
+优点：更清晰/更小/加载快/手机打开快/微信里更顺滑/Google 更喜欢
 1. categoryName 映射：
 news     → 新闻图片
 share    → 分享海报
