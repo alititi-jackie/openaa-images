@@ -44,20 +44,6 @@
   {
     "category": "share",
     "categoryName": "分享海报",
-    "filename": "openaa-ny-chinese-life-poster-02.png",
-    "path": "img/share/openaa-ny-chinese-life-poster-02.png",
-    "url": "https://img.openaa.com/img/share/openaa-ny-chinese-life-poster-02.png"
-  },
-  {
-    "category": "share",
-    "categoryName": "分享海报",
-    "filename": "openaa-ny-chinese-life-poster-02.webp",
-    "path": "img/share/openaa-ny-chinese-life-poster-02.webp",
-    "url": "https://img.openaa.com/img/share/openaa-ny-chinese-life-poster-02.webp"
-  },
-  {
-    "category": "share",
-    "categoryName": "分享海报",
     "filename": "openaa-ny-dmv-practice-poster-01.png",
     "path": "img/share/openaa-ny-dmv-practice-poster-01.png",
     "url": "https://img.openaa.com/img/share/openaa-ny-dmv-practice-poster-01.png"
@@ -96,6 +82,20 @@
     "filename": "openaa-ny-dmv-practice-poster-03.webp",
     "path": "img/share/openaa-ny-dmv-practice-poster-03.webp",
     "url": "https://img.openaa.com/img/share/openaa-ny-dmv-practice-poster-03.webp"
+  },
+  {
+    "category": "share",
+    "categoryName": "分享海报",
+    "filename": "openaa-ny-home-poster-01.png",
+    "path": "img/share/openaa-ny-home-poster-01.png",
+    "url": "https://img.openaa.com/img/share/openaa-ny-home-poster-01.png"
+  },
+  {
+    "category": "share",
+    "categoryName": "分享海报",
+    "filename": "openaa-ny-home-poster-01.webp",
+    "path": "img/share/openaa-ny-home-poster-01.webp",
+    "url": "https://img.openaa.com/img/share/openaa-ny-home-poster-01.webp"
   },
   {
     "category": "banners",
