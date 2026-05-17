@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://img.openaa.com/share/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://img.openaa.com/img/share/openaa-ny-chinese-life-poster-01.webp</image:loc>
+      <image:title>OpenAA 纽约华人生活入口海报</image:title>
+      <image:caption>OpenAA 纽约华人生活入口分享海报，适合朋友圈、微信群、小红书等平台分享。</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://img.openaa.com/img/share/openaa-ny-dmv-practice-poster-01.webp</image:loc>
+      <image:title>OpenAA DMV 笔试模拟海报</image:title>
+      <image:caption>OpenAA 纽约 DMV 中文练习和模拟考试分享海报。</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://img.openaa.com/img/share/openaa-ny-home-poster-01.webp</image:loc>
+      <image:title>OpenAA 首页宣传海报</image:title>
+      <image:caption>OpenAA 纽约华人生活入口首页宣传海报。</image:caption>
+    </image:image>
+  </url>
+</urlset>
