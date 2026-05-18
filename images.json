@@ -525,6 +525,34 @@
     "url": "https://img.openaa.com/img/dmv/what-is-learner-permit-ny.png"
   },
   {
+    "category": "dmv",
+    "categoryName": "DMV 图片",
+    "filename": "二维码 dmv.png",
+    "path": "img/dmv/二维码 dmv.png",
+    "url": "https://img.openaa.com/img/dmv/二维码 dmv.png"
+  },
+  {
+    "category": "dmv",
+    "categoryName": "DMV 图片",
+    "filename": "二维码dmv-ny-practice.png",
+    "path": "img/dmv/二维码dmv-ny-practice.png",
+    "url": "https://img.openaa.com/img/dmv/二维码dmv-ny-practice.png"
+  },
+  {
+    "category": "dmv",
+    "categoryName": "DMV 图片",
+    "filename": "二维码ny-openaa.png",
+    "path": "img/dmv/二维码ny-openaa.png",
+    "url": "https://img.openaa.com/img/dmv/二维码ny-openaa.png"
+  },
+  {
+    "category": "dmv",
+    "categoryName": "DMV 图片",
+    "filename": "二维码openaa.png",
+    "path": "img/dmv/二维码openaa.png",
+    "url": "https://img.openaa.com/img/dmv/二维码openaa.png"
+  },
+  {
     "category": "services",
     "categoryName": "本地服务图片",
     "filename": "ad-1.png",
