@@ -91,6 +91,34 @@
     "url": "https://img.openaa.com/img/share/openaa-ny-home-poster-01.webp"
   },
   {
+    "category": "share",
+    "categoryName": "分享海报",
+    "filename": "二维码 dmv.png",
+    "path": "img/share/二维码 dmv.png",
+    "url": "https://img.openaa.com/img/share/二维码 dmv.png"
+  },
+  {
+    "category": "share",
+    "categoryName": "分享海报",
+    "filename": "二维码dmv-ny-practice.png",
+    "path": "img/share/二维码dmv-ny-practice.png",
+    "url": "https://img.openaa.com/img/share/二维码dmv-ny-practice.png"
+  },
+  {
+    "category": "share",
+    "categoryName": "分享海报",
+    "filename": "二维码ny-openaa.png",
+    "path": "img/share/二维码ny-openaa.png",
+    "url": "https://img.openaa.com/img/share/二维码ny-openaa.png"
+  },
+  {
+    "category": "share",
+    "categoryName": "分享海报",
+    "filename": "二维码openaa.png",
+    "path": "img/share/二维码openaa.png",
+    "url": "https://img.openaa.com/img/share/二维码openaa.png"
+  },
+  {
     "category": "banners",
     "categoryName": "广告图片",
     "filename": "1fe24ddc-ba0e-4b39-9319-04167f139d29.png",
@@ -523,34 +551,6 @@
     "filename": "what-is-learner-permit-ny.png",
     "path": "img/dmv/what-is-learner-permit-ny.png",
     "url": "https://img.openaa.com/img/dmv/what-is-learner-permit-ny.png"
-  },
-  {
-    "category": "dmv",
-    "categoryName": "DMV 图片",
-    "filename": "二维码 dmv.png",
-    "path": "img/dmv/二维码 dmv.png",
-    "url": "https://img.openaa.com/img/dmv/二维码 dmv.png"
-  },
-  {
-    "category": "dmv",
-    "categoryName": "DMV 图片",
-    "filename": "二维码dmv-ny-practice.png",
-    "path": "img/dmv/二维码dmv-ny-practice.png",
-    "url": "https://img.openaa.com/img/dmv/二维码dmv-ny-practice.png"
-  },
-  {
-    "category": "dmv",
-    "categoryName": "DMV 图片",
-    "filename": "二维码ny-openaa.png",
-    "path": "img/dmv/二维码ny-openaa.png",
-    "url": "https://img.openaa.com/img/dmv/二维码ny-openaa.png"
-  },
-  {
-    "category": "dmv",
-    "categoryName": "DMV 图片",
-    "filename": "二维码openaa.png",
-    "path": "img/dmv/二维码openaa.png",
-    "url": "https://img.openaa.com/img/dmv/二维码openaa.png"
   },
   {
     "category": "services",
