@@ -16,6 +16,20 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
+    "filename": "openaa-first-time-user-guide.png",
+    "path": "img/news/openaa-first-time-user-guide.png",
+    "url": "https://img.openaa.com/img/news/openaa-first-time-user-guide.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "openaa-news-center-for-ny-chinese-community.png",
+    "path": "img/news/openaa-news-center-for-ny-chinese-community.png",
+    "url": "https://img.openaa.com/img/news/openaa-news-center-for-ny-chinese-community.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
     "filename": "openaa-official-launch-ny-chinese-life-platform.png",
     "path": "img/news/openaa-official-launch-ny-chinese-life-platform.png",
     "url": "https://img.openaa.com/img/news/openaa-official-launch-ny-chinese-life-platform.png"
