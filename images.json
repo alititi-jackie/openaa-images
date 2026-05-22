@@ -23,6 +23,20 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
+    "filename": "us-bank-account-opening-guide.png",
+    "path": "img/news/us-bank-account-opening-guide.png",
+    "url": "https://img.openaa.com/img/news/us-bank-account-opening-guide.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "us-rental-tips-for-chinese-newcomers.png",
+    "path": "img/news/us-rental-tips-for-chinese-newcomers.png",
+    "url": "https://img.openaa.com/img/news/us-rental-tips-for-chinese-newcomers.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
     "filename": "usa-iphone-download-china-app-guide.png",
     "path": "img/news/usa-iphone-download-china-app-guide.png",
     "url": "https://img.openaa.com/img/news/usa-iphone-download-china-app-guide.png"
