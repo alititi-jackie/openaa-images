@@ -16,6 +16,13 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
+    "filename": "ny-driver-license-application-guide.png",
+    "path": "img/news/ny-driver-license-application-guide.png",
+    "url": "https://img.openaa.com/img/news/ny-driver-license-application-guide.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
     "filename": "openaa-first-time-user-guide.png",
     "path": "img/news/openaa-first-time-user-guide.png",
     "url": "https://img.openaa.com/img/news/openaa-first-time-user-guide.png"
