@@ -191,6 +191,13 @@
   {
     "category": "banners",
     "categoryName": "广告图片",
+    "filename": "4bd57d0e-08dc-4f07-a8a2-96158193c569.webp",
+    "path": "img/banners/4bd57d0e-08dc-4f07-a8a2-96158193c569.webp",
+    "url": "https://img.openaa.com/img/banners/4bd57d0e-08dc-4f07-a8a2-96158193c569.webp"
+  },
+  {
+    "category": "banners",
+    "categoryName": "广告图片",
     "filename": "4cbbab1c-a91d-4414-9889-97a8844b1e24.png",
     "path": "img/banners/4cbbab1c-a91d-4414-9889-97a8844b1e24.png",
     "url": "https://img.openaa.com/img/banners/4cbbab1c-a91d-4414-9889-97a8844b1e24.png"
@@ -208,6 +215,13 @@
     "filename": "5c6006d2-b716-43b4-98e7-cc1761718a48.png",
     "path": "img/banners/5c6006d2-b716-43b4-98e7-cc1761718a48.png",
     "url": "https://img.openaa.com/img/banners/5c6006d2-b716-43b4-98e7-cc1761718a48.png"
+  },
+  {
+    "category": "banners",
+    "categoryName": "广告图片",
+    "filename": "5c6006d2-b716-43b4-98e7-cc1761718a48.webp",
+    "path": "img/banners/5c6006d2-b716-43b4-98e7-cc1761718a48.webp",
+    "url": "https://img.openaa.com/img/banners/5c6006d2-b716-43b4-98e7-cc1761718a48.webp"
   },
   {
     "category": "banners",
@@ -296,6 +310,13 @@
   {
     "category": "banners",
     "categoryName": "广告图片",
+    "filename": "17588ab5-0248-47ae-a9a2-b0e02e06ea5b.webp",
+    "path": "img/banners/17588ab5-0248-47ae-a9a2-b0e02e06ea5b.webp",
+    "url": "https://img.openaa.com/img/banners/17588ab5-0248-47ae-a9a2-b0e02e06ea5b.webp"
+  },
+  {
+    "category": "banners",
+    "categoryName": "广告图片",
     "filename": "af1cf36f-b523-4b76-90f9-0e623631411f.png",
     "path": "img/banners/af1cf36f-b523-4b76-90f9-0e623631411f.png",
     "url": "https://img.openaa.com/img/banners/af1cf36f-b523-4b76-90f9-0e623631411f.png"
@@ -338,16 +359,16 @@
   {
     "category": "banners",
     "categoryName": "广告图片",
-    "filename": "fb592415-540c-4cfa-ac66-161876571940 (1).png",
-    "path": "img/banners/fb592415-540c-4cfa-ac66-161876571940 (1).png",
-    "url": "https://img.openaa.com/img/banners/fb592415-540c-4cfa-ac66-161876571940 (1).png"
+    "filename": "fb592415-540c-4cfa-ac66-161876571940.png",
+    "path": "img/banners/fb592415-540c-4cfa-ac66-161876571940.png",
+    "url": "https://img.openaa.com/img/banners/fb592415-540c-4cfa-ac66-161876571940.png"
   },
   {
     "category": "banners",
     "categoryName": "广告图片",
-    "filename": "fb592415-540c-4cfa-ac66-161876571940.png",
-    "path": "img/banners/fb592415-540c-4cfa-ac66-161876571940.png",
-    "url": "https://img.openaa.com/img/banners/fb592415-540c-4cfa-ac66-161876571940.png"
+    "filename": "fb592415-540c-4cfa-ac66-161876571940.webp",
+    "path": "img/banners/fb592415-540c-4cfa-ac66-161876571940.webp",
+    "url": "https://img.openaa.com/img/banners/fb592415-540c-4cfa-ac66-161876571940.webp"
   },
   {
     "category": "default",
