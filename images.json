@@ -560,6 +560,34 @@
     "url": "https://img.openaa.com/img/icons/ad-5.png"
   },
   {
+    "category": "icons",
+    "categoryName": "图标",
+    "filename": "openaa-secondhand-placeholder.png",
+    "path": "img/icons/openaa-secondhand-placeholder.png",
+    "url": "https://img.openaa.com/img/icons/openaa-secondhand-placeholder.png"
+  },
+  {
+    "category": "icons",
+    "categoryName": "图标",
+    "filename": "openaa-service-placeholder.png",
+    "path": "img/icons/openaa-service-placeholder.png",
+    "url": "https://img.openaa.com/img/icons/openaa-service-placeholder.png"
+  },
+  {
+    "category": "icons",
+    "categoryName": "图标",
+    "filename": "openaa-service-placeholder1.png",
+    "path": "img/icons/openaa-service-placeholder1.png",
+    "url": "https://img.openaa.com/img/icons/openaa-service-placeholder1.png"
+  },
+  {
+    "category": "icons",
+    "categoryName": "图标",
+    "filename": "openaa-service-placeholder2.png",
+    "path": "img/icons/openaa-service-placeholder2.png",
+    "url": "https://img.openaa.com/img/icons/openaa-service-placeholder2.png"
+  },
+  {
     "category": "dmv",
     "categoryName": "DMV 图片",
     "filename": "7.png",
