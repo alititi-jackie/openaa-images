@@ -11,6 +11,8 @@ img/services/   本地服务图片
 img/pages/      页面配图
 img/others/     其它图片
 
+图片地址在文件夹里的images里
+
 文件命名建议
 以后统一：
 openaa-home-banner-01.webp
