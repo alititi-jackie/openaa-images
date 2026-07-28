@@ -464,6 +464,13 @@
   {
     "category": "logo",
     "categoryName": "Logo",
+    "filename": "logo1.png",
+    "path": "img/logo/logo1.png",
+    "url": "https://img.openaa.com/img/logo/logo1.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
     "filename": "logo2.png",
     "path": "img/logo/logo2.png",
     "url": "https://img.openaa.com/img/logo/logo2.png"
@@ -492,23 +499,23 @@
   {
     "category": "logo",
     "categoryName": "Logo",
+    "filename": "openaa-logo.png",
+    "path": "img/logo/openaa-logo.png",
+    "url": "https://img.openaa.com/img/logo/openaa-logo.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "openaa-logo1.png",
+    "path": "img/logo/openaa-logo1.png",
+    "url": "https://img.openaa.com/img/logo/openaa-logo1.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
     "filename": "openaa.png",
     "path": "img/logo/openaa.png",
     "url": "https://img.openaa.com/img/logo/openaa.png"
-  },
-  {
-    "category": "logo",
-    "categoryName": "Logo",
-    "filename": "unnamed.jpg",
-    "path": "img/logo/unnamed.jpg",
-    "url": "https://img.openaa.com/img/logo/unnamed.jpg"
-  },
-  {
-    "category": "logo",
-    "categoryName": "Logo",
-    "filename": "usa168hub-logo.png",
-    "path": "img/logo/usa168hub-logo.png",
-    "url": "https://img.openaa.com/img/logo/usa168hub-logo.png"
   },
   {
     "category": "logo",
