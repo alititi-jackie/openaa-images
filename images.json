@@ -520,6 +520,13 @@
   {
     "category": "logo",
     "categoryName": "Logo",
+    "filename": "openaa3.png",
+    "path": "img/logo/openaa3.png",
+    "url": "https://img.openaa.com/img/logo/openaa3.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
     "filename": "toolku.png",
     "path": "img/logo/toolku.png",
     "url": "https://img.openaa.com/img/logo/toolku.png"
