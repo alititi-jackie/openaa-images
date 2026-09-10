@@ -492,6 +492,13 @@
   {
     "category": "logo",
     "categoryName": "Logo",
+    "filename": "numbermobi.jpg",
+    "path": "img/logo/numbermobi.jpg",
+    "url": "https://img.openaa.com/img/logo/numbermobi.jpg"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
     "filename": "openAA (2).png",
     "path": "img/logo/openAA (2).png",
     "url": "https://img.openaa.com/img/logo/openAA (2).png"
@@ -530,6 +537,13 @@
     "filename": "openaa5.png",
     "path": "img/logo/openaa5.png",
     "url": "https://img.openaa.com/img/logo/openaa5.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "openaa06.jpg",
+    "path": "img/logo/openaa06.jpg",
+    "url": "https://img.openaa.com/img/logo/openaa06.jpg"
   },
   {
     "category": "logo",
