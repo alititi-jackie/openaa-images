@@ -16,9 +16,58 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
+    "filename": "ny-chinese-job-search-safety-guide.png",
+    "path": "img/news/ny-chinese-job-search-safety-guide.png",
+    "url": "https://img.openaa.com/img/news/ny-chinese-job-search-safety-guide.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "ny-chinese-moving-guide-address-change.png",
+    "path": "img/news/ny-chinese-moving-guide-address-change.png",
+    "url": "https://img.openaa.com/img/news/ny-chinese-moving-guide-address-change.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "ny-chinese-neighborhood-guide-flushing-brooklyn-queens.png",
+    "path": "img/news/ny-chinese-neighborhood-guide-flushing-brooklyn-queens.png",
+    "url": "https://img.openaa.com/img/news/ny-chinese-neighborhood-guide-flushing-brooklyn-queens.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
     "filename": "ny-driver-license-application-guide.png",
     "path": "img/news/ny-driver-license-application-guide.png",
     "url": "https://img.openaa.com/img/news/ny-driver-license-application-guide.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "ny-newcomer-useful-websites-guide.png",
+    "path": "img/news/ny-newcomer-useful-websites-guide.png",
+    "url": "https://img.openaa.com/img/news/ny-newcomer-useful-websites-guide.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "ny-parking-ticket-check-payment-guide.png",
+    "path": "img/news/ny-parking-ticket-check-payment-guide.png",
+    "url": "https://img.openaa.com/img/news/ny-parking-ticket-check-payment-guide.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "ny-rental-viewing-checklist-before-lease.png",
+    "path": "img/news/ny-rental-viewing-checklist-before-lease.png",
+    "url": "https://img.openaa.com/img/news/ny-rental-viewing-checklist-before-lease.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "ny-road-test-day-before-checklist.png",
+    "path": "img/news/ny-road-test-day-before-checklist.png",
+    "url": "https://img.openaa.com/img/news/ny-road-test-day-before-checklist.png"
   },
   {
     "category": "news",
@@ -44,6 +93,13 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
+    "filename": "openaa-post-writing-tips-title-image-contact.png",
+    "path": "img/news/openaa-post-writing-tips-title-image-contact.png",
+    "url": "https://img.openaa.com/img/news/openaa-post-writing-tips-title-image-contact.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
     "filename": "us-bank-account-opening-guide.png",
     "path": "img/news/us-bank-account-opening-guide.png",
     "url": "https://img.openaa.com/img/news/us-bank-account-opening-guide.png"
@@ -51,9 +107,23 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
+    "filename": "us-healthcare-insurance-basics-for-newcomers.png",
+    "path": "img/news/us-healthcare-insurance-basics-for-newcomers.png",
+    "url": "https://img.openaa.com/img/news/us-healthcare-insurance-basics-for-newcomers.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
     "filename": "us-rental-tips-for-chinese-newcomers.png",
     "path": "img/news/us-rental-tips-for-chinese-newcomers.png",
     "url": "https://img.openaa.com/img/news/us-rental-tips-for-chinese-newcomers.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "us-secondhand-market-scam-safety-guide.png",
+    "path": "img/news/us-secondhand-market-scam-safety-guide.png",
+    "url": "https://img.openaa.com/img/news/us-secondhand-market-scam-safety-guide.png"
   },
   {
     "category": "news",
@@ -415,6 +485,20 @@
   {
     "category": "logo",
     "categoryName": "Logo",
+    "filename": "009fdb64-7150-413a-9ad1-48fb5b0be030 (1).png",
+    "path": "img/logo/009fdb64-7150-413a-9ad1-48fb5b0be030 (1).png",
+    "url": "https://img.openaa.com/img/logo/009fdb64-7150-413a-9ad1-48fb5b0be030 (1).png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "009fdb64-7150-413a-9ad1-48fb5b0be030.png",
+    "path": "img/logo/009fdb64-7150-413a-9ad1-48fb5b0be030.png",
+    "url": "https://img.openaa.com/img/logo/009fdb64-7150-413a-9ad1-48fb5b0be030.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
     "filename": "7458f2e8-0823-47c1-9bef-1217d5c19e6b.png",
     "path": "img/logo/7458f2e8-0823-47c1-9bef-1217d5c19e6b.png",
     "url": "https://img.openaa.com/img/logo/7458f2e8-0823-47c1-9bef-1217d5c19e6b.png"
@@ -436,6 +520,13 @@
   {
     "category": "logo",
     "categoryName": "Logo",
+    "filename": "cf5352b6-12db-4f1a-af3f-2c2dbf1b8aec.png",
+    "path": "img/logo/cf5352b6-12db-4f1a-af3f-2c2dbf1b8aec.png",
+    "url": "https://img.openaa.com/img/logo/cf5352b6-12db-4f1a-af3f-2c2dbf1b8aec.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
     "filename": "ChatGPT Image 2025年12月18日 20_49_35.png",
     "path": "img/logo/ChatGPT Image 2025年12月18日 20_49_35.png",
     "url": "https://img.openaa.com/img/logo/ChatGPT Image 2025年12月18日 20_49_35.png"
@@ -453,6 +544,13 @@
     "filename": "dfa23bbf-5ef3-4cf5-bae2-0fdde5d66b1a.png",
     "path": "img/logo/dfa23bbf-5ef3-4cf5-bae2-0fdde5d66b1a.png",
     "url": "https://img.openaa.com/img/logo/dfa23bbf-5ef3-4cf5-bae2-0fdde5d66b1a.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "f19dea1c-669e-45d3-b29f-ce1ac4c60377.png",
+    "path": "img/logo/f19dea1c-669e-45d3-b29f-ce1ac4c60377.png",
+    "url": "https://img.openaa.com/img/logo/f19dea1c-669e-45d3-b29f-ce1ac4c60377.png"
   },
   {
     "category": "logo",
