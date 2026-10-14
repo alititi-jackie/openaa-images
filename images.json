@@ -569,6 +569,13 @@
   {
     "category": "logo",
     "categoryName": "Logo",
+    "filename": "helloku logo.jpg",
+    "path": "img/logo/helloku logo.jpg",
+    "url": "https://img.openaa.com/img/logo/helloku logo.jpg"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
     "filename": "logo.png",
     "path": "img/logo/logo.png",
     "url": "https://img.openaa.com/img/logo/logo.png"
