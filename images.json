@@ -16,13 +16,6 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
-    "filename": "img-upload-test.png",
-    "path": "img/news/img-upload-test.png",
-    "url": "https://img.openaa.com/img/news/img-upload-test.png"
-  },
-  {
-    "category": "news",
-    "categoryName": "新闻图片",
     "filename": "ny-chinese-job-search-safety-guide.png",
     "path": "img/news/ny-chinese-job-search-safety-guide.png",
     "url": "https://img.openaa.com/img/news/ny-chinese-job-search-safety-guide.png"
