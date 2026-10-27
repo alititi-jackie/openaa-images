@@ -9,6 +9,13 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
+    "filename": "bk-chinatown-cover.webp",
+    "path": "img/news/bk-chinatown-cover.webp",
+    "url": "https://img.openaa.com/img/news/bk-chinatown-cover.webp"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
     "filename": "c7a91108-77d2-4b45-8123-d874f998bc82.png",
     "path": "img/news/c7a91108-77d2-4b45-8123-d874f998bc82.png",
     "url": "https://img.openaa.com/img/news/c7a91108-77d2-4b45-8123-d874f998bc82.png"
