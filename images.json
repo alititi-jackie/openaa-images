@@ -30,13 +30,6 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
-    "filename": "cover.webp",
-    "path": "img/news/cover.webp",
-    "url": "https://img.openaa.com/img/news/cover.webp"
-  },
-  {
-    "category": "news",
-    "categoryName": "新闻图片",
     "filename": "doj-noncitizen-voting-charges-october-2026.webp",
     "path": "img/news/doj-noncitizen-voting-charges-october-2026.webp",
     "url": "https://img.openaa.com/img/news/doj-noncitizen-voting-charges-october-2026.webp"
@@ -103,6 +96,13 @@
     "filename": "ny-road-test-day-before-checklist.png",
     "path": "img/news/ny-road-test-day-before-checklist.png",
     "url": "https://img.openaa.com/img/news/ny-road-test-day-before-checklist.png"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "nyc-marathon-2026-street-closures-guide.webp",
+    "path": "img/news/nyc-marathon-2026-street-closures-guide.webp",
+    "url": "https://img.openaa.com/img/news/nyc-marathon-2026-street-closures-guide.webp"
   },
   {
     "category": "news",
