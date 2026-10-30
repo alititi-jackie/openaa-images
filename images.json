@@ -681,9 +681,9 @@
   {
     "category": "logo",
     "categoryName": "Logo",
-    "filename": "openaa_avatar_without_com.jpg",
-    "path": "img/logo/openaa_avatar_without_com.jpg",
-    "url": "https://img.openaa.com/img/logo/openaa_avatar_without_com.jpg"
+    "filename": "OpenAA 华人生活平台标志.png",
+    "path": "img/logo/OpenAA 华人生活平台标志.png",
+    "url": "https://img.openaa.com/img/logo/OpenAA 华人生活平台标志.png"
   },
   {
     "category": "logo",
@@ -698,6 +698,13 @@
     "filename": "openaa-logo1.png",
     "path": "img/logo/openaa-logo1.png",
     "url": "https://img.openaa.com/img/logo/openaa-logo1.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "OpenAA.com品牌徽标.png",
+    "path": "img/logo/OpenAA.com品牌徽标.png",
+    "url": "https://img.openaa.com/img/logo/OpenAA.com品牌徽标.png"
   },
   {
     "category": "logo",
@@ -723,16 +730,16 @@
   {
     "category": "logo",
     "categoryName": "Logo",
-    "filename": "openaa06.jpg",
-    "path": "img/logo/openaa06.jpg",
-    "url": "https://img.openaa.com/img/logo/openaa06.jpg"
+    "filename": "openaa7.jpg",
+    "path": "img/logo/openaa7.jpg",
+    "url": "https://img.openaa.com/img/logo/openaa7.jpg"
   },
   {
     "category": "logo",
     "categoryName": "Logo",
-    "filename": "openaa7.jpg",
-    "path": "img/logo/openaa7.jpg",
-    "url": "https://img.openaa.com/img/logo/openaa7.jpg"
+    "filename": "OpenAA美国华人生活入口.png",
+    "path": "img/logo/OpenAA美国华人生活入口.png",
+    "url": "https://img.openaa.com/img/logo/OpenAA美国华人生活入口.png"
   },
   {
     "category": "logo",
@@ -782,6 +789,13 @@
     "filename": "极简华人 OpenAA 圆形品牌标志.png",
     "path": "img/logo/极简华人 OpenAA 圆形品牌标志.png",
     "url": "https://img.openaa.com/img/logo/极简华人 OpenAA 圆形品牌标志.png"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
+    "filename": "极简圆形华人生活平台标志.png",
+    "path": "img/logo/极简圆形华人生活平台标志.png",
+    "url": "https://img.openaa.com/img/logo/极简圆形华人生活平台标志.png"
   },
   {
     "category": "icons",
