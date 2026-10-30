@@ -681,6 +681,13 @@
   {
     "category": "logo",
     "categoryName": "Logo",
+    "filename": "openaa_avatar_without_com.jpg",
+    "path": "img/logo/openaa_avatar_without_com.jpg",
+    "url": "https://img.openaa.com/img/logo/openaa_avatar_without_com.jpg"
+  },
+  {
+    "category": "logo",
+    "categoryName": "Logo",
     "filename": "openaa-logo.png",
     "path": "img/logo/openaa-logo.png",
     "url": "https://img.openaa.com/img/logo/openaa-logo.png"
