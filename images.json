@@ -16,6 +16,13 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
+    "filename": "brooklyn-chinatown-discount-2026.webp",
+    "path": "img/news/brooklyn-chinatown-discount-2026.webp",
+    "url": "https://img.openaa.com/img/news/brooklyn-chinatown-discount-2026.webp"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
     "filename": "c7a91108-77d2-4b45-8123-d874f998bc82.png",
     "path": "img/news/c7a91108-77d2-4b45-8123-d874f998bc82.png",
     "url": "https://img.openaa.com/img/news/c7a91108-77d2-4b45-8123-d874f998bc82.png"
@@ -33,13 +40,6 @@
     "filename": "cnmi-evs-tap-suspended-october-2026.webp",
     "path": "img/news/cnmi-evs-tap-suspended-october-2026.webp",
     "url": "https://img.openaa.com/img/news/cnmi-evs-tap-suspended-october-2026.webp"
-  },
-  {
-    "category": "news",
-    "categoryName": "新闻图片",
-    "filename": "cover.webp",
-    "path": "img/news/cover.webp",
-    "url": "https://img.openaa.com/img/news/cover.webp"
   },
   {
     "category": "news",
