@@ -9,6 +9,13 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
+    "filename": "black-friday-2026-shopping-guide.webp",
+    "path": "img/news/black-friday-2026-shopping-guide.webp",
+    "url": "https://img.openaa.com/img/news/black-friday-2026-shopping-guide.webp"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
     "filename": "brooklyn-8th-avenue-chinatown-co-naming-2026.webp",
     "path": "img/news/brooklyn-8th-avenue-chinatown-co-naming-2026.webp",
     "url": "https://img.openaa.com/img/news/brooklyn-8th-avenue-chinatown-co-naming-2026.webp"
@@ -40,13 +47,6 @@
     "filename": "cnmi-evs-tap-suspended-october-2026.webp",
     "path": "img/news/cnmi-evs-tap-suspended-october-2026.webp",
     "url": "https://img.openaa.com/img/news/cnmi-evs-tap-suspended-october-2026.webp"
-  },
-  {
-    "category": "news",
-    "categoryName": "新闻图片",
-    "filename": "cover.webp",
-    "path": "img/news/cover.webp",
-    "url": "https://img.openaa.com/img/news/cover.webp"
   },
   {
     "category": "news",
