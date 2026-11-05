@@ -37,6 +37,27 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
+    "filename": "brooklyn-sunset-park-58th-street-fire.webp",
+    "path": "img/news/brooklyn-sunset-park-58th-street-fire.webp",
+    "url": "https://img.openaa.com/img/news/brooklyn-sunset-park-58th-street-fire.webp"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "brooklyn-sunset-park-fire-crew.jpg",
+    "path": "img/news/brooklyn-sunset-park-fire-crew.jpg",
+    "url": "https://img.openaa.com/img/news/brooklyn-sunset-park-fire-crew.jpg"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
+    "filename": "brooklyn-sunset-park-fire-house.jpg",
+    "path": "img/news/brooklyn-sunset-park-fire-house.jpg",
+    "url": "https://img.openaa.com/img/news/brooklyn-sunset-park-fire-house.jpg"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
     "filename": "c7a91108-77d2-4b45-8123-d874f998bc82.png",
     "path": "img/news/c7a91108-77d2-4b45-8123-d874f998bc82.png",
     "url": "https://img.openaa.com/img/news/c7a91108-77d2-4b45-8123-d874f998bc82.png"
