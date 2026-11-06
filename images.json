@@ -93,6 +93,13 @@
   {
     "category": "news",
     "categoryName": "新闻图片",
+    "filename": "idnyc-application-guide.webp",
+    "path": "img/news/idnyc-application-guide.webp",
+    "url": "https://img.openaa.com/img/news/idnyc-application-guide.webp"
+  },
+  {
+    "category": "news",
+    "categoryName": "新闻图片",
     "filename": "kingsland-commons-brooklyn-housing-lottery.webp",
     "path": "img/news/kingsland-commons-brooklyn-housing-lottery.webp",
     "url": "https://img.openaa.com/img/news/kingsland-commons-brooklyn-housing-lottery.webp"
